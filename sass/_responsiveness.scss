@@ -1,0 +1,182 @@
+@media only screen and (max-width: 767px) {
+    body {
+        overflow-y: visible;
+    }
+    header {
+        position: relative;
+    }
+    .header-top {
+        /*display: flex;
+        justify-content: space-between;
+        align-items: center;*/
+        padding: 0 -120px 0 0;
+    }
+    .header-body {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -100px;
+    }
+    .header-text {
+        text-align: center;
+        margin-top: -200px;
+        /*margin-left: 90px;*/
+    }
+    .header-top .btn3 {
+        display: none;
+    }
+    .header-text .btn3 {
+        margin-left: 40%;
+        margin-top: -13px;
+    }
+    .header-pic {
+        margin-top: 97px;
+    }
+    .curve-pic {
+        background-image: url(images/bg-tablet-pattern.svg);
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        background-repeat: no-repeat;
+        right: -20%;
+        background-size: contain;
+        top: -40%;
+        background-position: right;
+        z-index: -1;
+    }
+    .about-manage {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30%;
+    }
+    .curve-pic-2 {
+        display: none;
+    }
+    .curve-pic-3 {
+        background-image: url(images/bg-tablet-pattern.svg);
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-repeat: no-repeat;
+        right: -30%;
+        background-size: contain;
+        top: 28%;
+        background-position: right;
+        z-index: -1;
+    }
+    .header-para {
+        margin-right: -119px;
+        padding: 33px;
+        margin-top: 96px;
+    }
+    .profile-section-header {
+        padding: 0;
+        font-size: 35px;
+    }
+    .about-manage-paragaraph {
+        /*padding: 0 -50% 0 -10%;*/
+        text-align: left;
+    }
+    .about-manage-one-para {
+        padding: 0;
+        margin-left: 5%;
+    }
+    .round-btn {
+        padding: 11px 40px;
+        margin-left: 4px;
+        z-index: 2;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .about-manage-two {
+        margin-top: 50px;
+    }
+    h1 {
+        margin: -201px -90% -35% -50%;
+        padding-left: 16%;
+    }
+    h2 {
+        padding: 0;
+        margin-left: 0%;
+        text-align: center;
+        font-size: 40px;
+    }
+    h3 {
+        background-color: $Very-Pale-Red;
+        padding: 12px 12px;
+        margin-top: -45px;
+        border-radius: 30px;
+        margin-right: 11px;
+        margin-left: 70px;
+    }
+    .profile-btn {
+        margin-left: 37%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .orange-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .orange-header {
+        margin-right: 00%;
+        padding-right: 0%;
+    }
+    .orange-btn {
+        margin-top: 50px;
+        padding: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    //FOOTER
+    .copyright {
+        margin-top: 40%;
+    }
+    .footer-parts {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .logo {
+        width: 50%;
+    }
+    .foot-one-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .foot-two {
+        margin-top: -22%;
+        margin-left: -45%;
+    }
+    .foot-third {
+        margin-top: 30px;
+        margin-left: 30%;
+    }
+    .foot-four {
+        margin-top: -10px;
+        margin-left: 0%;
+    }
+    // MENU BUTTON
+    .menu-btn {
+        display: flex;
+        margin-left: 50%;
+    }
+    .menu-nav {
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        left: 50px;
+        height: 40vh;
+        transform: translateX(100vw);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+        li a {
+            color: $Very-Dark-Blue;
+            font-size: larger;
+            font-weight: bolder;
+        }
+    }
+    .menu-nav.open {
+        transform: translateX(0);
+    }
+}

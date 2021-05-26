@@ -1,0 +1,103 @@
+@import 'config';
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.curve-pic {
+    background-image: url(images/bg-tablet-pattern.svg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    right: -10%;
+    top: -25%;
+    background-position: right;
+    z-index: -1;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    li a {
+        padding: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: $Very-Dark-Blue;
+        &:hover {
+            color: $Dark-Grayish-Blue;
+            opacity: 1;
+        }
+    }
+}
+
+.btn3 {
+    padding: 15px 30px;
+    background-color: $Bright-Red;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    &:hover {
+        background-color: $Very-Pale-Red;
+    }
+}
+
+.header-body {
+    @include flex;
+    margin-top: 3%;
+}
+
+.header-pic {
+    background-image: url(images/illustration-intro.svg);
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-para {
+    color: $Dark-Grayish-Blue;
+    margin-top: 30px;
+    padding: 0 40% 0 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    margin-top: -20%;
+    padding: 0 120px 0 0;
+}
+
+h1 {
+    color: $Very-Dark-Blue;
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+// p {
+//     color: $Dark-Grayish-Blue;
+//     margin-top: 30px;
+//     padding: 0 40% 0 0;
+//     font-size: 15px;
+//     margin-bottom: 30px;
+// }

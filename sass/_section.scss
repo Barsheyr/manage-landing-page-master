@@ -1,0 +1,362 @@
+@import 'config';
+section {
+    position: relative;
+}
+
+.about-manage {
+    @include flex;
+    margin-top: -20px;
+}
+
+.about-manage-one {
+    margin-top: -23%;
+    position: relative;
+}
+
+.about-manage-one-para {
+    color: $Dark-Grayish-Blue;
+    margin-top: 30px;
+    padding: 0 10% 0 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.about-manage-two {
+    margin-top: 50px;
+}
+
+.curve-pic-2 {
+    background-image: url(images/bg-tablet-pattern.svg);
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-repeat: no-repeat;
+    left: -40%;
+    top: 10%;
+    background-position: left;
+    z-index: -1;
+    background-size: contain;
+}
+
+h2 {
+    font-size: 30px;
+    color: $Very-Dark-Blue;
+    padding-right: 90px;
+    margin-left: 70px;
+}
+
+.round-btn {
+    padding: 10px 20px;
+    background-color: $Bright-Red;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-right: 91%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: $Very-Dark-Blue;
+    margin-left: 15%;
+    font-size: 17px;
+    margin-top: -40px;
+}
+
+.about-manage-paragaraph {
+    color: $Dark-Grayish-Blue;
+    margin-top: 30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    margin-right: 79px;
+}
+
+// PROFILE
+.profile-section {
+    margin-top: 10%;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.profile-section-header {
+    text-align: center;
+    font-size: 30px;
+    color: $Very-Dark-Blue;
+    padding-right: 90px;
+    margin-bottom: 7%;
+}
+
+.profile-body {
+    background-color: $Vary-Light-Gray;
+}
+
+.profile-img-1,
+.profile-img-2,
+.profile-img-3,
+.profile-img-4 {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 15vh;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.profile-img-1 {
+    background-image: url(images/avatar-ali.png);
+}
+
+.profile-img-2 {
+    background-image: url(images/avatar-anisha.png);
+}
+
+.profile-img-3 {
+    background-image: url(images/avatar-richard.png);
+}
+
+.profile-img-4 {
+    background-image: url(images/avatar-shanai.png);
+}
+
+h4 {
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.profile-btn {
+    padding: 15px 30px;
+    background-color: $Bright-Red;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    margin-left: 45%;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-text {
+    padding: 10px;
+    text-align: center;
+    color: $Dark-Grayish-Blue;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 20px;
+    border: 2px solid $Bright-Red !important;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: $Bright-Red !important;
+}
+
+//ORANGE
+.orange-section {
+    background-image: url(images/bg-simplify-section-desktop.svg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-color: $Bright-Red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.orange-header {
+    font-size: 25px;
+    color: white;
+    margin: 0 50% 0 0;
+}
+
+.orange-btn {
+    padding: 5px 20px;
+    background-color: white;
+    color: $Bright-Red;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+// FOOTER
+footer {
+    background-color: $Very-Dark-Blue;
+}
+
+.footer-parts {
+    @include flex;
+    margin-top: 50px;
+}
+
+.icons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.foot-two,
+.foot-third {
+    margin-top: -60px;
+}
+
+li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 300;
+    &:hover {
+        color: $Bright-Red;
+    }
+}
+
+a {
+    color: white;
+}
+
+.copyright {
+    color: white;
+    margin-top: 18%;
+}
+
+.foot-btn {
+    padding: 5px 20px;
+    color: white;
+    background-color: $Bright-Red;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    margin-left: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.foot-four {
+    margin-top: -3%;
+}
+
+//FORM
+.form {
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    color: hsl(354, 100%, 66%);
+    visibility: visible;
+}
+
+
+/*span {
+    font-size: 12px;
+    color: #FF5466;
+    font-style: italic;
+    margin-left: 30px;
+    margin-top: 6px;
+    letter-spacing: 0.15px;
+    line-height: 20px;
+}*/
+
+input {
+    border: 3px solid white;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-left: 40px;
+    border: none;
+}
+
+
+/* HAMBURGER */
+
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn_lines,
+.menu-btn_lines::before,
+.menu-btn_lines::after {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: $Very-Dark-Blue;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_lines::before,
+.menu-btn_lines::after {
+    position: absolute;
+    content: " ";
+}
+
+.menu-btn_lines::before {
+    transform: translateY(-0.5rem);
+}
+
+.menu-btn_lines::after {
+    transform: translateY(0.5rem);
+}
+
+
+/*ANIMATIONS*/
+
+.menu-btn.open .menu-btn_lines {
+    transform: translateX(2rem);
+    background-color: transparent;
+}
+
+.menu-btn.open .menu-btn_lines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+}
+
+.menu-btn.open .menu-btn_lines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
